@@ -1,0 +1,9 @@
+from flask import Flask, render_template,request, redirect
+from flask_sqlalchemy import SQLAlchemy
+
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite://myresult.db'
+db = SQLAlchemy(app)
+
+Http://www.yandex.ru/main/index.html (tcp:80) (Без сертификата)
+Https://www.yanex.ru/main/index.html (tcp:443) (С сертификатом)
