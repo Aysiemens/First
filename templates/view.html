@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/view.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.css')}}">
+    <title>Первый урок</title>
+</head>
+<body>
+    {%for el in a%}
+    <div class="container p-2 text-dark rounded bg-light background-container">
+            <h4 class="text-center">{{ el.zag }}</h4>
+            <p class="p-1 m-1 text-center">{{ el.tex }}</p>
+    {% endfor %}
+            <input type="submit" class="btn btn-success center mx-auto d-block m-3" value="Вернуться назад">
+        </form>
+    </div>
+</body>
+</html>
